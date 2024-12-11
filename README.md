@@ -1,2 +1,16 @@
-# muay.github.io
-muay
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>อัปโหลดไฟล์</title>
+</head>
+<body>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="อัปโหลดไฟล์" name="submit">
+    </form>
+    
+    <img src="images/BP9.png" alt="BP9">
+
+</body>
+</html>
