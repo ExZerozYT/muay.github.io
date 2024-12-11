@@ -1,0 +1,58 @@
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    /* เพิ่ม display: flex */
+    justify-content: center;
+    /* จัดให้อยู่กึ่งกลางแนวนอน */
+    align-items: center;
+    /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    min-height: 100vh;
+    /* ให้ body สูงเต็มจอ */
+    margin: 0;
+    /* เอา margin ของ body ออก */
+}
+
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    /* จัดข้อความให้อยู่กึ่งกลาง */
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* เพิ่มระยะห่างด้านล่าง */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img {
+    float: left;
+    margin-top: -450px;
+    /* ปรับระยะห่างจากขอบบนตามต้องการ */
+    margin-left: -1500px;
+    /* ปรับระยะห่างจากขอบซ้ายตามต้องการ */
+    width: 300px;
+    /* กำหนดความกว้าง */
+    height: 300px;
+    /* กำหนดความสูง */
+    border: 5px solid black;
+    /* เพิ่มขอบ */
+    border-radius: 10px;
+    /* ปรับมุมโค้ง */
+}
