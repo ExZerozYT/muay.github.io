@@ -3,23 +3,21 @@ body {
     color: #fff;
     font-family: Arial, sans-serif;
     display: flex;
-    /* เพิ่ม display: flex */
     justify-content: center;
-    /* จัดให้อยู่กึ่งกลางแนวนอน */
     align-items: center;
-    /* จัดให้อยู่กึ่งกลางแนวตั้ง */
     min-height: 100vh;
-    /* ให้ body สูงเต็มจอ */
     margin: 0;
-    /* เอา margin ของ body ออก */
 }
 
 form {
+    position: absolute;
+    top: 10; /* กำหนดระยะห่างจากขอบบนสุดของหน้าจอเป็น 0 */
+    left: 50%; /* กำหนดให้อยู่กึ่งกลางแนวนอน */
+    transform: translateX(-50%); /*  ปรับตำแหน่งให้อยู่กึ่งกลางแนวนอนจริงๆ */
     background-color: #333;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    /* จัดข้อความให้อยู่กึ่งกลาง */
 }
 
 input[type="file"] {
@@ -29,7 +27,6 @@ input[type="file"] {
     color: #fff;
     border-radius: 5px;
     margin-bottom: 10px;
-    /* เพิ่มระยะห่างด้านล่าง */
 }
 
 input[type="submit"] {
@@ -42,17 +39,10 @@ input[type="submit"] {
 }
 
 img {
-    float: left;
-    margin-top: -450px;
-    /* ปรับระยะห่างจากขอบบนตามต้องการ */
-    margin-left: -1500px;
-    /* ปรับระยะห่างจากขอบซ้ายตามต้องการ */
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 300px;
-    /* กำหนดความกว้าง */
     height: 300px;
-    /* กำหนดความสูง */
-    border: 5px solid black;
-    /* เพิ่มขอบ */
     border-radius: 10px;
-    /* ปรับมุมโค้ง */
 }
