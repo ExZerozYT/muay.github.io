@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Side Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="#" class="active">หน้าแรก</a>
+    <a href="upload.html">อัพโหลดรูป</a>
+    <a href="https://eservice.dlt.go.th/esvapp/esv/ebk/esv02q002/" target="_blank">เช็คภาษี</a>
+  </div>
+
+  <div id="main" class="content">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; เปิดเมนู</span>
+  </div>
+
+  <script>
+    function openNav() {
+  document.getElementById("mySidenav").style.left = "0";
+  document.getElementById("main").classList.add("open"); 
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.left = "-250px";
+  document.getElementById("main").classList.remove("open"); 
+}
+  </script>
+</body>
+
+</html>

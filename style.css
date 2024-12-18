@@ -1,0 +1,91 @@
+/* Basic Styling */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px; /* เปลี่ยนจาก right เป็น left */
+  background-color: #2196F3;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.3s ease;
+  box-sizing: border-box; 
+}
+
+.sidenav a {
+  padding: 16px 8px 16px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  position: relative; 
+}
+
+.sidenav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidenav a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidenav a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 20px; /* เปลี่ยนจาก right เป็น left */
+  transform: translateY(-50%);
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.sidenav a:hover::after {
+  width: 20px;
+}
+
+/*  เพิ่ม  class  ใหม่สำหรับตอนเปิดเมนู  */
+.content.open { 
+  margin-left: 250px;
+}
+
+.content {
+  padding: 20px;
+  transition: margin-left 0.3s ease; /* เพิ่ม transition */
+}
+
+.closebtn { /* เพิ่มสไตล์สำหรับปุ่มปิด */
+  position: absolute;
+  top: 0;
+  right: 25px; 
+  font-size: 36px;
+  margin-left: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.closebtn:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) { /* ปรับแต่งสำหรับหน้าจอขนาดเล็ก */
+  .sidenav {
+    width: 100%; 
+  }
+
+  .sidenav a {
+    padding: 10px 8px 10px 32px; 
+    font-size: 16px; 
+  }
+}
